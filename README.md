@@ -13,6 +13,8 @@ Quick utility that wraps input validation and next(ShuffleSplit().split(X, y)) a
 # sklearn.linear_model import LogisticRegression
 sklearn.linear_model.LogisticRegression(penalty='l2', *, dual=False, tol=0.0001, C=1.0, fit_intercept=True, intercept_scaling=1, class_weight=None, random_state=None, solver='lbfgs', max_iter=100, multi_class='auto', verbose=0, warm_start=False, n_jobs=None, l1_ratio=None)
 
+In the multiclass case, the training algorithm uses the one-vs-rest (OvR) scheme if the ‘multi_class’ option is set to ‘ovr’, and uses the cross-entropy loss if the ‘multi_class’ option is set to ‘multinomial’.
+
 # sklearn.metrics import accuracy_score
 sklearn.metrics.accuracy_score(y_true, y_pred, *, normalize=True, sample_weight=None) Accuracy classification score.
 
